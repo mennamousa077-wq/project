@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+
+
+    <nav> <!--   navbar  section-->
+        <h2 class="logo">My portfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero sectio -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hello, I am <span>menna hassan</span></h1>
+            <p>A frontend developer</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p> I'm a web developer who loves building creative websites using HTML, CSS I focus on creating clean,
+            responsive, and user-friendly designs.</p>
+
+
+    </section>
+
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML /CSS</li>
+            <li>Javascript</li>
+            <li>Responsive Design</li>
+            <li>UI /UX Design</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Frontend Developer</strong></li>
+            <li><strong>Internet Web Developer</strong></li>
+        </ul>
+
+    </section>
+
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Projects</h2>
+        <div class="Projects">
+            <div class="project">
+                <img class="img-fluid" src="R.png" alt="project 1">
+                <h3>Portofolio website</h3>
+                <p>Designing a simple personal website using HTML and CSS</p>
+            </div>
+
+
+            <div class="project">
+                <img class="img-fluid" src="best-landing-page-examples-64e6080f990bb-sej.webp" alt="project 2">
+                <h3>Landing page</h3>
+                <p>Responsive landing page for products and services</p>
+            </div>
+
+
+            <div class="project">
+                <img class="img-fluid" src="download.webp" alt="project 3">
+                <h3> Blog Template</h3>
+                <p>Designing a blog interface that is easy to read and organized.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
+            <a href="https://github.com" target="_blank">Github</a>
+            <a href="mailto:john@example.com" target="_blank">Email</a>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="copyright"> © 2025 Menna Hassan. All Rights Reserved</p>
+
+
+    </footer>
+
+
+    <script>
+        // Progress bar implementation
+        function updateProgressBar() {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const progress = (scrollTop / documentHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        window.addEventListener('scroll', updateProgressBar);     
+    </script>
+
+</body>
+
+</html>
